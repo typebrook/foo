@@ -35,7 +35,7 @@
     }
   },
   "sprite": "https://raw.githubusercontent.com/typebrook/mapstew/master/resources/rudymap",
-  "glyphs": "http://localhost:8000/static/fonts/KlokanTech%20{fontstack}/{range}.pbf",
+  "glyphs": "https://typebrook.github.io/mapstew/static/fonts/KlokanTech%20{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
