@@ -21,8 +21,11 @@
       ]
     },
     "hillshading": {
-      "type": "raster",
-      "url": "https://api.maptiler.com/tiles/hillshades/tiles.json?key=Fa4snxgI75zdM0yN8lLz",
+      "type": "raster-dem",
+      "tiles": [
+        "https://typebrook.github.io/foo/tiles/{z}/{x}/{y}.png"
+      ],
+      "scheme": "tms",
       "tileSize": 256
     },
     "contours": {
@@ -287,16 +290,16 @@
     },
     {
       "id": "hillshading",
-      "type": "raster",
+      "type": "hillshade",
       "source": "hillshading",
       "minzoom": 3,
       "layout": {
         "visibility": "visible"
       },
       "paint": {
-        "raster-contrast": 0,
-        "raster-fade-duration": 300,
-        "raster-opacity": 0.2
+        "hillshade-shadow-color": "hsl(39, 21%, 33%)",
+        "hillshade-illumination-direction": 315,
+        "hillshade-exaggeration": 0.8
       }
     },
     {
